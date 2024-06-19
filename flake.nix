@@ -26,7 +26,10 @@
         pre-commit
       ];
       nativeBuildInputs = buildInputs;
-      devPkgs = with pkgs; [ pre-commit ];
+      devPkgs = with pkgs; [
+        pre-commit
+        just
+      ];
       npmDepsHash = ""; # <prefetch-npm-deps package-lock.json>
     in
     {
