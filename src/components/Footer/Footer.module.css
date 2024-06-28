@@ -1,0 +1,23 @@
+
+.footer {
+  background-color: #ffffff; 
+  color: #333333;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footerMain {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0; 
+  border-bottom: 1px solid #e0e0e0; 
+}
+
+.footerMain > div {
+  flex: 1;
+}
+
+.footerMain > div:not(:last-child) {
+  margin-right: 20px;
+}
