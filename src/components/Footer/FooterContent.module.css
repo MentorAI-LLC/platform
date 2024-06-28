@@ -3,9 +3,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 20px;
-  background-color: #EBF4F6;
-  color: #2F3645;
+  padding: 20px 0;
+  
 }
 
 .logoColumn, .companyColumn, .contactColumn {
@@ -50,7 +49,10 @@
   color: #61dafb;
   font-size: 2rem;
   transition: color 0.3s ease;
-  
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
 }
 
 .socialIcons a:hover {
@@ -75,6 +77,10 @@
   color: #61dafb;
   text-decoration: none;
   transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
 }
 
 .companyColumn a:hover {
@@ -90,7 +96,7 @@
 .contactColumn div svg {
   
   margin-right: 25px;
-  color: #61dafb;
+  color: #666666;
 }
 
 /* Media Queries for Responsiveness */
@@ -114,5 +120,72 @@
 
   .companyColumn ul {
     padding: 0;
+  }
+}
+.footerContent > div {
+  flex: 1;
+  margin-right: 20px;
+  min-width: 200px;
+}
+
+.footerContent h3 {
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.footerContent p {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.footerContent ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerContent ul li {
+  margin-bottom: 10px;
+}
+
+.footerContent a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.footerContent a:hover {
+  text-decoration: none;
+}
+
+.logoSection {
+  flex: 2;
+  min-width: 250px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 10px;
+}
+
+.socialLinks a {
+  color: #666666;
+  font-size: 1.2rem;
+}
+
+.companySection, .resourcesSection, .contactSection {
+  flex: 1;
+  min-width: 200px;
+}
+
+
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    text-align: center; 
+  }
+  .footerContent > div {
+    margin-right: 0;
+    margin-bottom: 20px; 
   }
 }

@@ -2,7 +2,7 @@
 .callToAction {
   background-color: #a7d8f0;
   text-align: center;
-  padding: 50px;
+  padding: 50px 0;
   border-radius: 10px;
 }
 
@@ -19,16 +19,32 @@
 }
 
 .ctaButton {
-  background-color: #ffffff; 
-  color: #000000; 
+  background-color: #ffffff;
+  color: #007bff;
   padding: 15px 30px;
   font-size: 1.2rem;
   border: none;
-  border-radius: 30px; 
+  border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .ctaButton:hover {
   background-color: #f0f0f0;
+}
+
+/* استعلامات الوسائط */
+@media (max-width: 768px) {
+  .callToAction {
+    padding: 30px 0;
+  }
+
+  .callToAction h2 {
+    font-size: 2rem;
+  }
+
+  .ctaButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
 }

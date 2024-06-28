@@ -1,3 +1,4 @@
+// FooterBottom.tsx
 import React from 'react';
 import styles from './FooterBottom.module.css';
 
@@ -5,15 +6,13 @@ const FooterBottom: React.FC = () => {
   return (
     <div className={styles.footerBottom}>
       <div className={styles.links}>
-        <a href="#">About us</a>
-        <a href="#">Contact</a>
-        <a href="#">Privacy policy</a>
-        <a href="#">Sitemap</a>
-        <a href="#">Terms of Use</a>
+        <a href="#about-us">About us</a>
+        <a href="#contact">Contact</a>
+        <a href="#privacy-policy">Privacy policy</a>
+        <a href="#sitemap">Sitemap</a>
+        <a href="#terms-of-use">Terms of Use</a>
       </div>
-      <div className={styles.copyright}>
-        © 2024, All Rights Reserved
-      </div>
+      <p>&copy; 2024, All Rights Reserved</p>
     </div>
   );
 };
