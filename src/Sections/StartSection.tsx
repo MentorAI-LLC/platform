@@ -10,7 +10,7 @@ import React from 'react';
  */
 function StartSection() {
   return (
-    <section className="bg-[#9BD6E7] mt-80 w-full h-[350px] flex flex-col items-center justify-center gap-6 md:gap-10">
+    <section className="bg-[#9BD6E7] w-full h-[350px] flex flex-col items-center justify-center gap-6 md:gap-10">
       <h2 className="text-white text-xl md:text-5xl font-bold text-center">
         Are you ready to get started?
         <br /> We got you covered!
