@@ -1,6 +1,13 @@
 import SolutionBox from '@/components/SolutionBox';
 import Image from 'next/image';
 
+/**
+ * SolutionSection Component
+ *
+ * A functional component that represents the solution section of the webpage. It includes multiple `SolutionBox` components and decorative arrow images.
+ *
+ * @returns {JSX.Element} A JSX element representing the solution section.
+ */
 function SolutionSection() {
   return (
     <section
@@ -16,10 +23,10 @@ function SolutionSection() {
         </SolutionBox>
         <Image
           src="/images/arrow05.svg"
-          alt="arrow"
+          alt="Decorative arrow"
           width={200}
           height={200}
-          className="absolute top-48 left-10 rotate-45 lg:top-72 lg:w-[160px] xl:w-[200px]  lg:left-36 lg:rotate-[30deg] xl:left-56 skew-x-12 hidden md:block"
+          className="absolute top-48 left-10 rotate-45 lg:top-72 lg:w-[160px] xl:w-[200px] lg:left-36 lg:rotate-[30deg] xl:left-56 skew-x-12 hidden md:block"
         />
         <SolutionBox className="static md:absolute top-96 right-1/2 md:translate-x-1/2">
           <p className="text-xl">
@@ -28,7 +35,7 @@ function SolutionSection() {
         </SolutionBox>
         <Image
           src="/images/arrow05.svg"
-          alt="arrow"
+          alt="Decorative arrow"
           width={200}
           height={200}
           className="absolute top-60 right-20 lg:top-72 lg:w-[160px] xl:w-[200px] lg:right-40 xl:right-56 -rotate-90 skew-x-12 hidden md:block"
