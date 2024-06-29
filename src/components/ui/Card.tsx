@@ -43,24 +43,15 @@ type CardDescriptionProps = {
 
 // Define the CardDescription component
 function CardDescription({ className, children }: CardDescriptionProps) {
-  return <p className={cn("text-sm text-gray-600 mb-4", className)}>{children}</p>;
+  return <p className={cn("text-base text-gray-600 mb-4", className)}>{children}</p>;
 }
 
-// Define the props for the CardContent component
-type CardContentProps = {
-  children: React.ReactNode;
-  className?: string;
-};
 
-// Define the CardContent component
-function CardContent({ className, children }: CardContentProps) {
-  return <div className={cn("mb-4", className)}>{children}</div>;
-}
+
 
 // Attach the Title, Description, and Content components to the Card component
 Card.Title = CardTitle;
 Card.Description = CardDescription;
-Card.Content = CardContent;
 
 export default Card;
-export { CardTitle as Title, CardDescription as Description, CardContent as Content };
+export { CardTitle as Title, CardDescription as Description };
