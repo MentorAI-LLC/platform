@@ -1,8 +1,15 @@
 "use strict";
 exports.__esModule = true;
-// FooterBottom.tsx
 var react_1 = require("react");
 var FooterBottom_module_css_1 = require("./FooterBottom.module.css");
+/**
+ * FooterBottom Component
+ *
+ * A functional component that represents the bottom section of the footer.
+ * It includes a list of navigation links and a copyright notice.
+ *
+ * @returns {JSX.Element} A JSX element representing the footer bottom section.
+ */
 var FooterBottom = function () {
     return (react_1["default"].createElement("div", { className: FooterBottom_module_css_1["default"].footerBottom },
         react_1["default"].createElement("div", { className: FooterBottom_module_css_1["default"].links },

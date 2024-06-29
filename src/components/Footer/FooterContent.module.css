@@ -1,80 +1,73 @@
-
+/* Styles for the footer content section */
 .footerContent {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 20px 0;
-  
+  padding: 20px 0 ;
+  margin: 0 20px;
 }
 
+/* Individual columns within the footer content */
 .logoColumn, .companyColumn, .contactColumn {
   flex: 1;
-  margin: 50px;
   min-width: 200px;
-  @media (max-width: 480px) {
-    .logoColumn, .companyColumn, .contactColumn {
-      margin: 10px;
-      
-    }
-
-    .logoColumn h3 {
-      width: 20px; 
-    }
-  }
+  text-align: center; /* Center align text */
+  margin: 30px 120px; /* Adjusted margin for spacing between columns */
 }
 
-
+/* Styles for logo column heading */
 .logoColumn h3 {
   font-size: 1.8rem;
   margin-bottom: 10px;
-  margin-right: 230px;
   color: #21a1f1;
-  
 }
 
+/* Styles for logo column paragraph */
 .logoColumn p {
   font-size: 1.2rem;
   margin-bottom: 20px;
   color: #ccc;
-  text-align: start;
+  margin-right: -80px;
+  text-align: center; /* Center align text */
 }
 
+/* Styles for social icons container */
 .socialIcons {
   display: flex;
-  gap: 40px;
-  
+  justify-content: center; /* Center align social icons */
+  gap: 40px; /* Gap between social icons */
 }
 
+/* Styles for social icons */
 .socialIcons a {
-  color: #61dafb;
+  color: #666666;
   font-size: 2rem;
   transition: color 0.3s ease;
-  -webkit-transition: color 0.3s ease;
-  -moz-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
 }
 
 .socialIcons a:hover {
   color: #21a1f1;
 }
 
+/* Styles for company column heading */
 .companyColumn h4 {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
+/* Styles for unordered list in company column */
 .companyColumn ul {
   list-style: none;
   padding: 0;
 }
 
+/* Styles for list items in company column */
 .companyColumn li {
   margin-bottom: 10px;
 }
 
+/* Styles for links in company column */
 .companyColumn a {
-  color: #61dafb;
+  color: #666666;
   text-decoration: none;
   transition: color 0.3s ease;
   -webkit-transition: color 0.3s ease;
@@ -87,6 +80,7 @@
   color: #21a1f1;
 }
 
+/* Styles for contact column */
 .contactColumn div {
   display: flex;
   align-items: center;
@@ -94,98 +88,28 @@
 }
 
 .contactColumn div svg {
-  
   margin-right: 25px;
-  color: #666666;
+  color: #21a1f1;
+  
 }
-
-/* Media Queries for Responsiveness */
+.contactColumn :hover {
+  color: #21a1f1;
+}
+/* Media Queries for Responsiveness (if necessary) */
 @media (max-width: 768px) {
   .footerContent {
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Center align columns */
+  }
+
+  .footerContent > div {
+    margin-bottom: 20px; /* Add bottom margin for spacing */
   }
 
   .logoColumn, .companyColumn, .contactColumn {
-    margin: 10px 0;
-    text-align: center;
+    margin: 10px 0; /* Reduced margin for smaller screens */
   }
-  .contactColumn div {
-    margin-left: 80px;
-  }
-
-  .socialIcons {
-    justify-content: center;
-  }
-
-  .companyColumn ul {
-    padding: 0;
-  }
-}
-.footerContent > div {
-  flex: 1;
-  margin-right: 20px;
-  min-width: 200px;
-}
-
-.footerContent h3 {
-  font-size: 1.5rem;
-  color: #333333;
-  margin-bottom: 10px;
-}
-
-.footerContent p {
-  font-size: 1rem;
-  color: #666666;
-  margin-bottom: 20px;
-}
-
-.footerContent ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footerContent ul li {
-  margin-bottom: 10px;
-}
-
-.footerContent a {
-  color: #666666;
-  text-decoration: none;
-}
-
-.footerContent a:hover {
-  text-decoration: none;
-}
-
-.logoSection {
-  flex: 2;
-  min-width: 250px;
-}
-
-.socialLinks {
-  display: flex;
-  gap: 10px;
-}
-
-.socialLinks a {
-  color: #666666;
-  font-size: 1.2rem;
-}
-
-.companySection, .resourcesSection, .contactSection {
-  flex: 1;
-  min-width: 200px;
-}
-
-
-@media (max-width: 768px) {
-  .footerContent {
-    flex-direction: column;
-    text-align: center; 
-  }
-  .footerContent > div {
-    margin-right: 0;
-    margin-bottom: 20px; 
+  .contactColumn{
+    margin-left: 120px;
   }
 }

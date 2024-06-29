@@ -1,4 +1,4 @@
-/* FooterBottom.module.css */
+/* Styles for the bottom section of the footer */
 .footerBottom {
   padding: 20px 0;
   font-size: 0.9rem;
@@ -7,38 +7,43 @@
   text-align: center;
 }
 
+/* Links container within footer bottom */
 .footerBottom .links {
   display: flex;
   justify-content: center;
-  gap: 85px;
+  gap: 85px; /* Gap between links */
   margin-bottom: 10px;
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap; /* Wrap links on smaller screens */
 }
 
+/* Styling for footer bottom links */
 .footerBottom a {
   color: #666666;
   text-decoration: none;
-  margin: 0 5px;
+  margin: 0 5px; /* Spacing between links */
 }
 
+/* Hover effect for footer bottom links */
 .footerBottom a:hover {
   text-decoration: none;
+  
+  color: #21a1f1;
 }
 
+
+/* Additional styling for paragraphs within footer bottom */
 .footerBottom p {
-  margin: 10px 0;
-
+  margin: 10px 0; /* Margin for paragraphs */
 }
 
-
+/* Media query for responsiveness */
 @media (max-width: 768px) {
   .footerBottom .links {
-    justify-content: center; 
-    gap: 20px; 
+    justify-content: center; /* Center align links */
+    gap: 20px; /* Reduce gap between links */
   }
 
   .footerBottom p {
-    margin-left: 0;
+    margin-left: 0; /* Adjust margin for paragraphs */
   }
 }
