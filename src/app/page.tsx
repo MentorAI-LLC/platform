@@ -1,13 +1,11 @@
 import HeroSection from '@/Sections/HeroSection';
-import Header from '@/components/Header';
+import AboutUs from '@/Sections/about-us';
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <main>
+    <main className="flex flex-col gap-8">
         <HeroSection />
-      </main>
-    </>
+        <AboutUs />
+    </main>
   );
 }

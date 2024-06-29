@@ -1,4 +1,5 @@
-import Button from '@/components/Button';
+import HeroBackground from '@/app/_components/hero-background';
+import { Button } from '@/components/ui/buttons';
 import Image from 'next/image';
 
 /**
@@ -8,28 +9,26 @@ import Image from 'next/image';
  *
  * @returns {JSX.Element} A JSX element representing the hero section.
  */
-function HeroSection() {
+export default function HeroSection() {
   return (
     <section
-      className="flex md:flex-row flex-col-reverse md:justify-around gap-10 mb-16 md:pt-16 pt-8"
+      className="flex md:flex-row flex-col-reverse md:justify-around h-screen"
       id="home"
     >
-      <div className="absolute top-16 left-0 right-0 -z-10 md:h-auto h-screen">
-        <Image
-          src="/images/hero-rectangle.svg"
-          priority={true}
-          width={1000}
-          height={760}
-          className="w-full h-full object-cover"
-          alt="Hero section background rectangle"
-        />
+      <div className="absolute top-16 left-0 right-0 -z-10 h-screen">
+        <HeroBackground />
       </div>
       <div className="md:w-1/3 w-full flex flex-col justify-center items-center">
         <p className="font-black text-[#17284C] md:text-2xl text-base text-center md:mb-16 mb-8">
           Unlock your potential with Mentor.ai <br /> personalized roadmaps
           guiding your <br /> tech journey, one step at a time.
         </p>
-        <Button label="Start Now" type="primary" className="w-48 font-bold" />
+         <Button
+               color="primary"
+               className="w-48 font-bold text-white"
+         >
+            Start Now
+         </Button>
       </div>
       <div className="md:w-1/3 w-full">
         <Image
@@ -44,5 +43,3 @@ function HeroSection() {
     </section>
   );
 }
-
-export default HeroSection;
