@@ -1,0 +1,118 @@
+/* Styles for the footer content section */
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 ;
+  margin: 0 20px;
+  flex-wrap: nowrap;
+}
+
+/* Individual columns within the footer content */
+.logoColumn, .companyColumn, .contactColumn {
+  flex: 1;
+  min-width: 200px;
+  text-align: center; /* Center align text */
+  margin: 30px 80px;
+  flex-wrap: nowrap;
+}
+
+/* Styles for logo column heading */
+.logoColumn h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #21a1f1;
+}
+
+/* Styles for logo column paragraph */
+.logoColumn p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ccc;
+  margin-right: -80px;
+  text-align: center; /* Center align text */
+}
+
+/* Styles for social icons container */
+.socialIcons {
+  display: flex;
+  justify-content: center; /* Center align social icons */
+  gap: 40px; /* Gap between social icons */
+}
+
+/* Styles for social icons */
+.socialIcons a {
+  color: #666666;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: #21a1f1;
+}
+
+/* Styles for company column heading */
+.companyColumn h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Styles for unordered list in company column */
+.companyColumn ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Styles for list items in company column */
+.companyColumn li {
+  margin-bottom: 10px;
+}
+
+/* Styles for links in company column */
+.companyColumn a {
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.companyColumn a:hover {
+  color: #21a1f1;
+}
+
+/* Styles for contact column */
+.contactColumn div {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+.contactColumn div svg {
+  margin-right: 20px;
+  color: #21a1f1;
+  
+}
+.contactColumn :hover {
+  color: #21a1f1;
+}
+/* Media Queries for Responsiveness (if necessary) */
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .footerContent > div {
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+
+  .logoColumn, .companyColumn, .contactColumn {
+    margin: 10px 0; /* Reduced margin for smaller screens */
+    
+  }
+  
+}

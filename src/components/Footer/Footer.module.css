@@ -1,0 +1,26 @@
+/* Styles for the footer section */
+.footer {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Main footer container with flex layout */
+.footerMain {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Each column within the footer */
+.footerMain > div {
+  flex: 1; /* Each column takes equal space */
+}
+
+/* Margin between columns, except the last one */
+.footerMain > div:not(:last-child) {
+  margin-right: 20px;
+}
