@@ -1,7 +1,9 @@
 import AboutUs from '@/Sections/about-us';
+import HeroSection from '@/Sections/HeroSection';
+import SolutionSection from '@/Sections/SolutionSection';
 import StartSection from '@/Sections/StartSection';
 import { ProductSection } from '@/app/components';
-import HeroSection from '@/Sections/HeroSection';
+
 
 
 export default function Home() {
@@ -9,6 +11,7 @@ export default function Home() {
     <main className="flex flex-col gap-8">
         <HeroSection />
         <ProductSection />
+        <SolutionSection />
         <AboutUs />
         <StartSection />
     </main>
