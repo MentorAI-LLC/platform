@@ -29,7 +29,7 @@ function TitleSection(props: TitleProps) {
   return (
     <h2
       className={cn(
-        "text-center font-body text-4xl font-bold leading-snug text-text md:text-4xl",
+        "text-center font-heading text-5xl font-bold leading-snug text-text md:text-4xl",
         props.className
       )}
     >
@@ -46,7 +46,7 @@ type DescriptionProps = {
 
 // Define the DescriptionSection component
 function DescriptionSection({ className, children }: DescriptionProps) {
-  return <p className={cn("text-text/80", className)}>{children}</p>;
+  return <p className={cn("text-base", className)}>{children}</p>;
 }
 
 // Attach the Title and Description components to the Section component

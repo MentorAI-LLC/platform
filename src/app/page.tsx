@@ -2,7 +2,8 @@ import AboutUs from '@/Sections/about-us';
 import HeroSection from '@/Sections/HeroSection';
 import SolutionSection from '@/Sections/SolutionSection';
 import StartSection from '@/Sections/StartSection';
-import { ProductSection } from '@/app/components';
+import { ProductSection } from './_components';
+import WorkWithUs from '@/Sections/work-with-us';
 
 
 
@@ -12,6 +13,7 @@ export default function Home() {
         <HeroSection />
         <ProductSection />
         <SolutionSection />
+        <WorkWithUs />
         <AboutUs />
         <StartSection />
     </main>
