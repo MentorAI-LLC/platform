@@ -8,11 +8,11 @@ interface Product {
 }
 
 const products: Product[] = [
-  { id: 1, title: 'Lorem Ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.' },
-  { id: 2, title: 'Lorem Ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.' },
-  { id: 3, title: 'Lorem Ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.' },
-  { id: 4, title: 'Lorem Ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.' },
-  { id: 5, title: 'Lorem Ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.' },
+  { id: 1, title: 'Sign In', description: 'Sign In or Sign Up with your E-mail to start our platform.' },
+  { id: 2, title: 'Discover', description: 'Dicover how you can interact with the platform or book a ticket in one of our webinars to learn more.' },
+  { id: 3, title: 'Engage', description: 'Engage with the community, Share content or ask about anything you want.' },
+  { id: 4, title: 'Use our Currency', description: 'Use our currency system to buy content or Earn money.' },
+  { id: 5, title: 'Our AI model', description: 'Use our currency system to interact with our AI model and generate whatever content you want.' },
 ];
 
 const ProductSection: React.FC = () => {

@@ -18,7 +18,7 @@ function SolutionSection() {
       <div className="relative flex flex-col gap-6">
         <SolutionBox className="static md:absolute top-10 left-6 lg:top-20 lg:left-36 md:-rotate-12">
           <p className="text-xl">
-            We provide the best solution for your business 1
+            Get personalized learning using the latest technology of AI
           </p>
         </SolutionBox>
         <Image
@@ -30,7 +30,7 @@ function SolutionSection() {
         />
         <SolutionBox className="static md:absolute top-96 right-1/2 md:translate-x-1/2">
           <p className="text-xl">
-            We provide the best solution for your business 2
+            Engage with open-minded community and share or learn from peers and mentors
           </p>
         </SolutionBox>
         <Image
@@ -42,7 +42,7 @@ function SolutionSection() {
         />
         <SolutionBox className="static md:absolute top-10 right-6 lg:top-20 lg:right-36 md:rotate-12">
           <p className="text-xl">
-            We provide the best solution for your business 3
+            Earn currency to exchange with books, features or even 1 on 1 sessions with professional mentors
           </p>
         </SolutionBox>
       </div>

@@ -12,8 +12,9 @@ import Image from 'next/image';
 export default function HeroSection() {
   return (
     <section
-      className="flex md:flex-row flex-col-reverse md:justify-around h-screen"
+      className="flex md:flex-row flex-col-reverse md:justify-around h-screen mb-18" // Added mb-8 class here
       id="home"
+      style={{marginBottom: "10%"}}
     >
       <div className="absolute top-16 left-0 right-0 -z-10 h-screen">
         <HeroBackground />
@@ -23,12 +24,12 @@ export default function HeroSection() {
           Unlock your potential with Mentor.ai <br /> personalized roadmaps
           guiding your <br /> tech journey, one step at a time.
         </p>
-         <Button
-               color="primary"
-               className="w-48 font-bold text-white"
-         >
-            Start Now
-         </Button>
+        <Button
+          color="primary"
+          className="w-48 font-bold text-white"
+        >
+          Start Now
+        </Button>
       </div>
       <div className="md:w-1/3 w-full">
         <Image

@@ -5,10 +5,10 @@ import List, { Item } from "@/components/ui/list";
 
 export default function WorkWithUs(){
     const item=[
-        "lorem ipsum dolor sit amet",
-        "lorem ipsum dolor sit amet",
-        "lorem ipsum dolor sit amet",
-        "lorem ipsum dolor sit amet",
+        "We provide a platform for everyone to learn and engage in",
+        "A community for learners and tutors",
+        "Free & paid content",
+        "rewarding system for those who engage.",
     ]
     return(
         <Section

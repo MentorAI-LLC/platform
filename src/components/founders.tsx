@@ -1,26 +1,25 @@
 import Card, { Description, Title } from "./ui/Card"
 import Image from "next/image"
 import SEO from "@./../../public/person/SEO.jpg"
-import CEO from "@./../../public/person/CTO.jpg"
-import STE from "@./../../public/person/STE.jpg"
+import person from "@./../../public/person/person.jpg"
 
 
 export default function Founders(){
     const superparson=[
         {
-            name:"Mr:Cat Cat",
-            position:"Product Engineer",
+            name:"Abdulrahman Moussa",
+            position:"Front-End Engineer & Co-founder of Mentor.Ai",
             image:SEO
         },
         {
-            name:"Mr:Dog Dog",
-            position:"Software Engineer",
-            image:CEO
+            name:"Abdel-Moneim Ibrahim",
+            position:"Software Engineer & Founder of Mentor.Ai",
+            image:person
         },
         {
-            name:"Mr:Cat Cat",
-            position:"Markting salar",
-            image:STE
+            name:"Salia Brik",
+            position:"Back-End Engineer & Co-founder of Mentor.Ai",
+            image:person
         },
     ]
 

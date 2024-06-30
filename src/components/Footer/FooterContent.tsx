@@ -41,8 +41,8 @@ const FooterContent: React.FC = () => {
       </div>
       {/* Column for contact information */}
       <div className={styles.contactColumn}>
-        <div><FontAwesomeIcon icon={faPhone} /> Tel</div>
-        <div><FontAwesomeIcon icon={faEnvelope} /> Mail</div>
+        <div><FontAwesomeIcon icon={faPhone} /> +20 1033468669</div>
+        <div><FontAwesomeIcon icon={faEnvelope} /> ab2arabi22@gmail.com</div>
         <div><FontAwesomeIcon icon={faMapMarkerAlt} /> Address</div>
       </div>
     </div>
