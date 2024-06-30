@@ -17,3 +17,8 @@ img {
   user-select: none;
   -webkit-user-drag: none;
 }
+.arrow {
+  position: absolute;
+  left: 80.8%;
+  bottom: 76.65%;
+}
