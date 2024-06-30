@@ -6,6 +6,8 @@ import type { Metadata } from 'next';
 import '../styles/globals.css';
 import Header from '@/components/Header';
 import { cn } from "@/lib/utils";
+import FooterSection from '@/sections/FooterSection';
+
 
 config.autoAddCss = false;
 
@@ -47,7 +49,11 @@ export default function RootLayout({
           /> 
         */}
       </head>
-      <body className={cn("flex flex-col",inter.className)}>{children}</body>
+      <body className={cn("flex flex-col",inter.className)}>
+        <Header />
+        {children}
+        <FooterSection />
+      </body>
     </html>
   );
 }

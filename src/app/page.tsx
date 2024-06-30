@@ -24,7 +24,6 @@ export default function Home() {
         <WorkWithUs />
         <AboutUs />
         <StartSection />
-        <FooterSection />
     </main>
   );
 }
