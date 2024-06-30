@@ -1,18 +1,17 @@
-import HeroSection from '@/Sections/HeroSection';
+import AboutUs from '@/Sections/about-us';
 import StartSection from '@/Sections/StartSection';
-import Header from '@/components/Header';
 import { ProductSection } from '@/app/components';
+import HeroSection from '@/Sections/HeroSection';
+
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <main className="p-6">
+    <main className="flex flex-col gap-8">
         <HeroSection />
         <ProductSection />
+        <AboutUs />
         <StartSection />
-      </main>
-    </>
+    </main>
   );
 }
 

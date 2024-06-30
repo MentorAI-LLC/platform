@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import '../styles/globals.css';
+import Header from '@/components/Header';
+import { cn } from "@/lib/utils";
+import { Rubik } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] });
+const rubik = Rubik({ subsets: ["arabic", "latin"] });
 
 export const metadata: Metadata = {
   title: 'Mentor.AI',
@@ -17,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn("flex flex-col",rubik.className)}>
+           <Header />
+           {children}
+      </body>
     </html>
   );
 }
