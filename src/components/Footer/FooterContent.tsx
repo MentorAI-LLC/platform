@@ -20,7 +20,7 @@ const FooterContent: React.FC = () => {
       <div className={styles.logoColumn}>
         
         <h3 className={styles.logo}>MENTOR AI</h3>
-        <p>Lorem ipsum dolor, consectetur <br/>adipiscing. accumsan <br/>porta idiculus in mattis.</p>
+        <p style={{textAlign: "left"}}>Lorem ipsum dolor, consectetur <br/>adipiscing. accumsan <br/>porta idiculus in mattis.</p>
         {/* Social media icons */}
         <div className={styles.socialIcons}>
           <a href="#" aria-label="Twitter"><FontAwesomeIcon icon={faTwitter} /></a>

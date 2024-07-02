@@ -11,7 +11,7 @@
 .logoColumn, .companyColumn, .contactColumn {
   flex: 1;
   min-width: 200px;
-  text-align: center; /* Center align text */
+  text-align: left; /* Center align text */
   margin: 30px 80px;
   flex-wrap: nowrap;
 }
