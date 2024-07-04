@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
-import React from "react";
+import { cn } from '@/lib/utils';
+import React from 'react';
 
 // Define the props for the Card component
 type CardProps = {
@@ -10,7 +10,9 @@ type CardProps = {
 // Define the Card component
 function Card({ className, children }: CardProps) {
   return (
-    <div className={cn("border rounded-lg shadow-md p-4", className)}>
+    <div
+      className={cn('border rounded-lg shadow-md p-4 flex flex-col md:flex-row', className)}
+    >
       {children}
     </div>
   );
@@ -24,12 +26,7 @@ type CardTitleProps =
 // Define the CardTitle component
 function CardTitle(props: CardTitleProps) {
   return (
-    <h3
-      className={cn(
-        "text-lg font-semibold",
-        props.className
-      )}
-    >
+    <h3 className={cn('text-lg font-semibold', props.className)}>
       {props.title ?? props.children}
     </h3>
   );
@@ -43,11 +40,10 @@ type CardDescriptionProps = {
 
 // Define the CardDescription component
 function CardDescription({ className, children }: CardDescriptionProps) {
-  return <p className={cn("text-base text-gray-600 mb-4", className)}>{children}</p>;
+  return (
+    <p className={cn('text-base text-gray-600 mb-4', className)}>{children}</p>
+  );
 }
-
-
-
 
 // Attach the Title, Description, and Content components to the Card component
 Card.Title = CardTitle;

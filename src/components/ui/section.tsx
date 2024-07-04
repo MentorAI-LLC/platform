@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
 // Define the props for the Section component
 type SectionProps = {
@@ -12,7 +12,7 @@ function Section({ name, className, children }: SectionProps) {
   return (
     <section
       id={name}
-      className={cn("w-full flex flex-col gap-8 py-24 px-8", className)}
+      className={cn('w-full flex flex-col gap-8 py-24 px-8', className)}
     >
       {children}
     </section>
@@ -29,7 +29,7 @@ function TitleSection(props: TitleProps) {
   return (
     <h2
       className={cn(
-        "text-center font-heading text-5xl font-bold leading-snug text-text md:text-4xl",
+        'text-center font-bold leading-snug  text-3xl md:text-5xl',
         props.className
       )}
     >
@@ -46,7 +46,7 @@ type DescriptionProps = {
 
 // Define the DescriptionSection component
 function DescriptionSection({ className, children }: DescriptionProps) {
-  return <p className={cn("text-base", className)}>{children}</p>;
+  return <p className={cn('text-base', className)}>{children}</p>;
 }
 
 // Attach the Title and Description components to the Section component

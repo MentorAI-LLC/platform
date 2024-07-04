@@ -1,5 +1,5 @@
-import hero from "@/../public/images/hero-rectangle.svg";
-import Image from "next/image";
+import hero from '@/../public/images/hero-rectangle.svg';
+import Image from 'next/image';
 
 type Props = {
   className?: string;
