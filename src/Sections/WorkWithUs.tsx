@@ -12,14 +12,14 @@ export default function WorkWithUs() {
   ];
 
   return (
-    <Section name="why" className="gap-32">
-      <Title>Why Work With Us</Title>
+    <Section name="why" className="">
+      <Title className="mb-8">Why Work With Us</Title>
       <div className="flex flex-col justify-around md:flex-row gap-8">
         <Image src={image1} alt="work-us" />
         <div className="flex flex-col gap-8">
-          <Title className="md:max-w-xl text-left text-pretty text-xl">
+          <h3 className="md:max-w-xl text-left text-pretty font-bold leading-snug text-xl md:text-3xl">
             We Provide Many Features You Can Use
-          </Title>
+          </h3>
           <Description className="md:max-w-lg">
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequa .

@@ -34,7 +34,7 @@ export default function Founders() {
             src={parson.image}
             alt={`Picture of ${parson.name}`}
           />
-          <div className="w-full">
+          <div className="w-full text-center md:text-start">
             <Title>{parson.name}</Title>
             <Description>{parson.position}</Description>
           </div>

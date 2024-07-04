@@ -29,7 +29,7 @@ function TitleSection(props: TitleProps) {
   return (
     <h2
       className={cn(
-        'text-center font-bold leading-snug  text-3xl md:text-5xl',
+        'text-center font-bold leading-snug text-3xl md:text-5xl',
         props.className
       )}
     >

@@ -20,8 +20,8 @@ export default function HeroSection() {
       <HeroBackground className="absolute top-16 left-0 right-0 -z-10 md:h-auto h-screen" />
       <div className="md:w-1/3 w-full flex flex-col justify-center items-center">
         <p className="font-black text-[#17284C] md:text-2xl text-base text-center md:mb-16 mb-8">
-          Unlock your potential with Mentor.ai <br /> personalized roadmaps
-          guiding your <br /> tech journey, one step at a time.
+          Unlock your potential with Mentor.ai personalized roadmaps guiding
+          your tech journey, one step at a time.
         </p>
         <Button color="primary" className="w-48 font-bold text-white">
           Start Now
