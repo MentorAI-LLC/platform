@@ -4,9 +4,7 @@ import '../utils/fontawesome';
 import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
 import '../styles/globals.css';
-import Header from '@/components/Header';
 import { cn } from "@/lib/utils";
-import FooterSection from '@/sections/FooterSection';
 
 
 config.autoAddCss = false;
@@ -38,21 +36,9 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
-        {/* 
-          <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
-          /> 
-        */}
       </head>
       <body className={cn("flex flex-col",inter.className)}>
-        <Header />
         {children}
-        <FooterSection />
       </body>
     </html>
   );

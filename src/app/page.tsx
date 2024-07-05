@@ -4,6 +4,8 @@ import SolutionSection from '@/Sections/SolutionSection';
 import StartSection from '@/Sections/StartSection';
 import ProductSection from '@/Sections/ProductSection';
 import WorkWithUs from '@/Sections/WorkWithUs';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer/Footer';
 
 /**
  * Home Component
@@ -16,13 +18,17 @@ import WorkWithUs from '@/Sections/WorkWithUs';
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-8">
-      <HeroSection />
-      <ProductSection />
-      <SolutionSection />
-      <WorkWithUs />
-      <AboutUs />
-      <StartSection />
-    </main>
+    <>
+      <Header />
+      <main className="flex flex-col gap-8">
+        <HeroSection />
+        <ProductSection />
+        <SolutionSection />
+        <WorkWithUs />
+        <AboutUs />
+        <StartSection />
+      </main>
+      <Footer />
+    </>
   );
 }
