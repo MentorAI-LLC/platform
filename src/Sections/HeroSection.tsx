@@ -1,6 +1,8 @@
+'use client';
+
 import HeroBackground from '@/app/_components/hero-background';
 import Section from '@/components/ui/Section';
-import { Button } from '@/components/ui/buttons';
+import Button from '@/components/Button';
 import Image from 'next/image';
 import heroImage from '/public/images/hero-image.svg';
 
@@ -23,7 +25,12 @@ export default function HeroSection() {
           Unlock your potential with Mentor.ai personalized roadmaps guiding
           your tech journey, one step at a time.
         </p>
-        <Button color="primary" className="w-48 font-bold text-white">
+        <Button
+          variant="primary"
+          className="w-52"
+          type="button"
+          onClick={() => {}}
+        >
           Start Now
         </Button>
       </div>

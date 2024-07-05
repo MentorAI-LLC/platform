@@ -16,10 +16,13 @@ function StartSection() {
         <br /> We got you covered!
       </h2>
       <Button
-        label="Sign Up — Free"
-        type="outline"
+        variant="outline"
         className="font-semibold bg-white text-primary text-center py-4 px-12 max-h-max border-white"
-      />
+        type="link"
+        href="/register"
+      >
+        Sign Up — Free
+      </Button>
     </section>
   );
 }

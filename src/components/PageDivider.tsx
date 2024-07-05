@@ -16,18 +16,18 @@ function PageDivider({ children, className }: PageDividerProps) {
   );
 }
 
-// Define the props for the Form component
-type FormProps = {
+// Define the props for the FirstSide component
+type FirstSideProps = {
   children: React.ReactNode;
   className?: string;
 };
 
-// Define the Form component
-function Form({ children, className }: FormProps) {
+// Define the FirstSide component
+function FirstSide({ children, className }: FirstSideProps) {
   return (
     <div
       className={cn(
-        'w-full md:w-1/2 flex justify-center items-center',
+        'w-full lg:w-1/2 flex justify-center items-center',
         className
       )}
     >
@@ -36,18 +36,18 @@ function Form({ children, className }: FormProps) {
   );
 }
 
-// Define the props for the SideImage component
-type SideImageProps = {
+// Define the props for the ImageSide component
+type ImageSideProps = {
   children: React.ReactNode;
   className?: string;
 };
 
-// Define the SideImage component
-function SideImage({ children, className }: SideImageProps) {
+// Define the ImageSide component
+function ImageSide({ children, className }: ImageSideProps) {
   return (
     <div
       className={cn(
-        'w-1/3 hidden md:flex justify-center items-center bg-cover bg-center',
+        'w-1/3 hidden lg:flex justify-center items-center bg-cover bg-center',
         className
       )}
     >
@@ -57,8 +57,8 @@ function SideImage({ children, className }: SideImageProps) {
 }
 
 // Attach the Form and SideImage components to the PageDivider component
-PageDivider.Form = Form;
-PageDivider.SideImage = SideImage;
+PageDivider.FirstSide = FirstSide;
+PageDivider.SideImage = ImageSide;
 
 export default PageDivider;
-export { Form, SideImage };
+export { FirstSide, ImageSide };

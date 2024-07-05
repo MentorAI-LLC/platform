@@ -19,8 +19,12 @@ function HeaderButtons({ isOpen }: HeaderButtonsProps) {
         isOpen ? 'flex' : 'hidden'
       }`}
     >
-      <Button label="Register" type="primary" />
-      <Button label="Sign in" type="outline" />
+      <Button variant="primary" type="link" href="/register">
+        Register
+      </Button>
+      <Button variant="outline" type="link" href="/login">
+        Sign in
+      </Button>
     </div>
   );
 }

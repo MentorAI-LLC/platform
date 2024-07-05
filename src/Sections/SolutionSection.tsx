@@ -22,9 +22,10 @@ function SolutionSection() {
         <Image
           src="/images/arrow05.svg"
           alt="Decorative arrow"
+          priority={true}
           width={200}
           height={200}
-          className="absolute top-48 left-10 rotate-45 lg:top-72 lg:w-[160px] xl:w-[200px] lg:left-36 lg:rotate-[30deg] xl:left-56 skew-x-12 hidden md:block"
+          className="absolute top-48 left-10 rotate-45 w-auto h-auto lg:top-72 lg:w-[160px] xl:w-[200px] lg:left-36 lg:rotate-[30deg] xl:left-56 skew-x-12 hidden md:block"
         />
         <SolutionBox className="static md:absolute top-96 right-1/2 md:translate-x-1/2">
           <p className="text-xl">
@@ -35,9 +36,10 @@ function SolutionSection() {
         <Image
           src="/images/arrow05.svg"
           alt="Decorative arrow"
+          priority={true}
           width={200}
           height={200}
-          className="absolute top-60 right-20 lg:top-72 lg:w-[160px] xl:w-[200px] lg:right-40 xl:right-56 -rotate-90 skew-x-12 hidden md:block z-10"
+          className="absolute top-60 right-20 w-auto h-auto lg:top-72 lg:w-[160px] lg:h-auto xl:w-[200px] xl:h-auto lg:right-40 xl:right-56 -rotate-90 skew-x-12 hidden md:block z-10"
         />
         <SolutionBox className="static md:absolute top-10 right-6 lg:top-20 lg:right-36 md:rotate-12">
           <p className="text-xl">

@@ -22,7 +22,10 @@ interface FormInputProps {
 function FormInput({ label, type, placeholder, id }: FormInputProps) {
   return (
     <div className="mb-4">
-      <label className="block text-sm font-bold mb-2" htmlFor={id}>
+      <label
+        className="block text-sm text-gray-500 font-semibold mb-2"
+        htmlFor={id}
+      >
         {label}
       </label>
       <input

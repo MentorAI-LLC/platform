@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '@/components/Container';
-import PageDivider, { Form, SideImage } from '@/components/PageDivider';
+import PageDivider, { FirstSide, ImageSide } from '@/components/PageDivider';
 import LoginForm from '@/components/LoginForm';
 import Image from 'next/image';
 import login from '/public/images/login.svg';
@@ -18,12 +18,12 @@ function Login() {
   return (
     <Container className="flex items-center justify-center h-screen md:pt-0 pt-10">
       <PageDivider>
-        <Form>
+        <FirstSide>
           <LoginForm />
-        </Form>
-        <SideImage>
+        </FirstSide>
+        <ImageSide>
           <Image src={login} alt="login Image" priority={true} />
-        </SideImage>
+        </ImageSide>
       </PageDivider>
     </Container>
   );
